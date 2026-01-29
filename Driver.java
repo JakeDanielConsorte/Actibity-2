@@ -1,12 +1,17 @@
 public class Driver {
-    public String name;
 
-    Driver(String name){
-        this.name = name;
+    int yearExperience;
+
+    Driver(int yearExperience){
+        this.yearExperience = yearExperience;
+    }
+
+    String drive(){
+        return " I take passengers to their destinations.";
     }
 
     String identity(){
-        return "I am " + name + ". The bus driver.";
+        return "I am the bus driver. I have " + yearExperience + " years of experience." + drive() ;
     }
 
 }
